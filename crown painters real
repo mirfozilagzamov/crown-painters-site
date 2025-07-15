@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crown Painters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif;}
+    body {background-color: #fdf6ef; color: #222; line-height: 1.6;}
+    header {padding: 2rem; background-color: #f7f1e8;}
+    .hero {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 3rem 2rem; background-color: #fff;}
+    .hero-text {flex: 1; min-width: 300px; margin-right: 2rem;}
+    .hero-text h1 {font-size: 2.5rem; margin-bottom: 1rem;}
+    .quote-widget {background: #f7f1e8; padding: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; display: flex; flex-direction: column; gap: 0.5rem; min-width: 300px;}
+    .quote-widget input, .quote-widget select {padding: 0.75rem; border: 1px solid #ccc; border-radius: 6px;}
+    .quote-widget button {padding: 0.75rem; background: #222; color: #fff; border: none; border-radius: 6px; cursor: pointer;}
+    .section {padding: 4rem 2rem; text-align: center; background-color: #fff;}
+    .services, .gallery, .features, .testimonials, .contact {display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
+    .card {background: #f7f1e8; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);}
+    .card img {max-width: 100%; border-radius: 8px; margin-top: 1rem;}
+    footer {background: #f1ede4; text-align: center; padding: 2rem; margin-top: 2rem;}
+    .faq-item {text-align: left; margin-bottom: 1.5rem;}
+  </style>
+</head>
+<body>
+  <header>
+    <h2>CROWN PAINTERS</h2>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Interior & Exterior Painting Services with Remodeling</h1>
+      <p>Transform your space with expert finishes and high-end remodeling solutions across Los Angeles and Orange County.</p>
+    </div>
+    <form class="quote-widget">
+      <select required>
+        <option value="">Select Service</option>
+        <option>Interior Painting</option>
+        <option>Exterior Painting</option>
+        <option>Remodeling</option>
+      </select>
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <button type="submit">Get Free Quote</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Interior Painting</h3>
+        <p>Premium finishes that enhance the feel of your home or workspace.</p>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Interior Painting">
+      </div>
+      <div class="card">
+        <h3>Exterior Painting</h3>
+        <p>Boost your curb appeal with long-lasting, weatherproof painting.</p>
+        <img src="https://images.unsplash.com/photo-1589820296156-2454bb8a6e20" alt="Exterior Painting">
+      </div>
+      <div class="card">
+        <h3>Remodeling</h3>
+        <p>Stylish remodeling for kitchens, bathrooms, and more.</p>
+        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed" alt="Remodeling">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Project Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1595526114035-0c905de36b5c" alt="Living Room">
+      <img src="https://images.unsplash.com/photo-1582152625501-336b9c6dcaf0" alt="Kitchen Renovation">
+      <img src="https://images.unsplash.com/photo-1598300052361-59b7e9c5f6a8" alt="Office Remodel">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Why Choose Us</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Licensed & Insured</h3>
+        <p>Fully certified professionals you can rely on.</p>
+      </div>
+      <div class="card">
+        <h3>Top-Quality Materials</h3>
+        <p>We use premium paint and tools for long-lasting results.</p>
+      </div>
+      <div class="card">
+        <h3>Local Experts</h3>
+        <p>Serving LA & OC communities with pride and integrity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonials">
+      <div class="card">
+        <p>"Outstanding job on my kitchen renovation—professional and detailed!"</p>
+        <strong>- Maya R., Irvine</strong>
+      </div>
+      <div class="card">
+        <p>"They turned our outdated living room into a masterpiece. Highly recommend!"</p>
+        <strong>- Carlos T., Glendale</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>FAQs</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <strong>How much do your services cost?</strong>
+        <p>Our pricing is tailored to your specific needs. Get a free quote instantly above!</p>
+      </div>
+      <div class="faq-item">
+        <strong>How long does a project take?</strong>
+        <p>Most jobs are completed within 2–5 days depending on the scope.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Do you offer commercial services?</strong>
+        <p>Yes! We specialize in commercial office painting and renovations.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Crown Painters. All rights reserved.</p>
+  </footer>
+</body>
+</html>
